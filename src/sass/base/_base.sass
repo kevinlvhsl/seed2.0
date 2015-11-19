@@ -1,0 +1,75 @@
+@font-face
+    font-family: 'number'
+    src: url('../../src/font/LED-Regular.ttf') format('truetype')
+.number
+    font-family: "number" !important
+    font-style: normal
+    -webkit-font-smoothing: antialiased
+    -webkit-text-stroke-width: 0.2px
+    -moz-osx-font-smoothing: grayscale
+
+body
+    user-select: none
+a:active
+    transition: transform .3s
+    transform: scale(.9)
+
+html,body,#app
+    position: relative
+    height: 100%
+    min-height: rem(504)
+.view
+    height: 100%
+    min-height: rem(504)
+.animated
+    animation-duration: 1s
+    animation-fill-mode: both
+
+.animated.infinite
+    animation-iteration-count: infinite
+
+.animated.hinge
+    animation-duration: 2s
+
+.v-enter
+    transition: .5s all
+    transform: translate(0,-1000px)
+
+.v-leave
+    transition: .5s all
+    transform: translate(0,1000px)
+
+#div_subscribe_area
+    background-color: #2d2d2d
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    border-color: blue
+    iframe
+        display: block
+
+.copyright
+    &.fix-subscribe
+        bottom: r(110)
+    position: absolute
+    bottom: r(10)
+    left: 0
+    text-align: center
+    width: 100%
+    color: #fff
+    font-size: r(24)
+    transform: scale(.8)
+    padding: r(2)
+    z-index: 1
+a.back-button
+    position: absolute
+    display: block
+    top: 10px
+    left: 20px
+    @include bg(123, 32, 'back_button.png')
+    animation: pulse 2s infinite
+// 增加图表宽度
+// 心，实心心，评论，实心评论
+.i-cmt,.i-cmt-null,.i-xin,.i-xin-null
+    width: 1rem
