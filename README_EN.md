@@ -2,7 +2,7 @@
 
 ## Repo Description
 
-Intv frontend team inner framework for dev:
+Intv frontend team inner initialization setup for dev:
 
 > webpack + es2015 + Vue + Vue-router
 
