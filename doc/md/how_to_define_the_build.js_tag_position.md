@@ -41,3 +41,6 @@
 	```
 		npm run build
 	```
+
+##### Author
+**[Alex Q](<mailto:alexqin@intv.com.cn> "send me a mail")** 
